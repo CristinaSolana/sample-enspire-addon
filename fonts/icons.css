@@ -1,0 +1,1061 @@
+@font-face {
+  font-family: encons;
+  src: url("encons.eot?-442iqkdd");
+  src: url("encons.eot?#iefix-442iqkdd") format("embedded-opentype"), url("encons.woff?-442iqkdd") format("woff"), url("encons.ttf?-442iqkdd") format("truetype"), url("encons.svg?-442iqkdd#encons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+en-icon {
+  font-family: encons;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  en-icon.xs {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 1.2rem; }
+  en-icon.sm, en-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1.6rem; }
+  en-icon.md {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem; }
+  en-icon.lg {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 2.4rem; }
+  en-icon.primary {
+    color: #4083a4; }
+  en-icon.secondary {
+    color: #383f49; }
+  en-icon.success {
+    color: #49bf43; }
+  en-icon.info {
+    color: #02d9eb; }
+  en-icon.error {
+    color: #D95C5C; }
+  en-icon.warn {
+    color: #ff7d54; }
+  en-icon[icon=spinner] {
+    overflow: hidden;
+    position: relative; }
+  en-icon[icon=spinner]:before {
+    -webkit-animation: spinner 1300ms infinite linear;
+    animation: spinner 1300ms infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+  en-icon[icon=spinner].xs:before {
+    margin-left: -0.6rem;
+    margin-top: -0.6rem; }
+  en-icon[icon=spinner].sm:before, en-icon[icon=spinner]:before {
+    margin-left: -0.8rem;
+    margin-top: -0.8rem; }
+  en-icon[icon=spinner].md:before {
+    margin-left: -1rem;
+    margin-top: -1rem; }
+  en-icon[icon=spinner].lg:before {
+    margin-left: -1.2rem;
+    margin-top: -1.2rem; }
+  en-icon[icon^=file-] {
+    font-size: 32px;
+    width: 32px;
+    height: 32px; }
+    en-icon[icon^=file-]:before {
+      position: relative; }
+  en-icon[icon=file-tree]:before {
+    content: "\ea5d"; }
+  en-icon[icon=backspace]:before {
+    content: "\ea44"; }
+  en-icon[icon=sync]:before {
+    content: "\ea43"; }
+  en-icon[icon=button-grid]:before {
+    content: "\ea40"; }
+  en-icon[icon=more]:before {
+    content: "\ea28"; }
+  en-icon[icon=more-vertical]:before {
+    content: "\ea29"; }
+  en-icon[icon=code]:before {
+    content: "\ea27"; }
+  en-icon[icon=tools]:before {
+    content: "\ea5e"; }
+  en-icon[icon=monitor-code]:before {
+    content: "\ea5f"; }
+  en-icon[icon=monitor-code-gear]:before {
+    content: "\ea60"; }
+  en-icon[icon=monitor-gear]:before {
+    content: "\ea61"; }
+  en-icon[icon=monitor-tools]:before {
+    content: "\ea62"; }
+  en-icon[icon=application]:before {
+    content: "\ea63"; }
+  en-icon[icon=application-gear]:before {
+    content: "\ea64"; }
+  en-icon[icon=application-code]:before {
+    content: "\ea65"; }
+  en-icon[icon=application-tools]:before {
+    content: "\ea66"; }
+  en-icon[icon=disk-micro]:before {
+    content: "\ea20"; }
+  en-icon[icon=floppy]:before, en-icon[icon=disk-floppy]:before {
+    content: "\ea1d"; }
+  en-icon[icon=menu-up]:before {
+    content: "\ea1e"; }
+  en-icon[icon=menu-down]:before {
+    content: "\ea1f"; }
+  en-icon[icon=spinner]:before {
+    content: "\e901"; }
+  en-icon[icon=print]:before {
+    content: "\e902"; }
+  en-icon[icon=search]:before {
+    content: "\e627"; }
+  en-icon[icon=search-plus]:before {
+    content: "\e6cf"; }
+  en-icon[icon=search-minus]:before {
+    content: "\e6d0"; }
+  en-icon[icon=trash]:before {
+    content: "\e673"; }
+  en-icon[icon=edit]:before {
+    content: "\e629"; }
+  en-icon[icon=lock]:before {
+    content: "\e62a"; }
+  en-icon[icon=unlock]:before {
+    content: "\e61d"; }
+  en-icon[icon=refresh]:before, en-icon[icon=reload]:before {
+    content: "\e616"; }
+  en-icon[icon=gear]:before {
+    content: "\e61c"; }
+  en-icon[icon=gears]:before {
+    content: "\ea6b"; }
+  en-icon[icon=gear-automate]:before {
+    content: "\ea6a"; }
+  en-icon[icon=filter]:before {
+    content: "\e90b"; }
+  en-icon[icon=list-detailed]:before {
+    content: "\e628"; }
+  en-icon[icon=category]:before {
+    content: "\e628"; }
+  en-icon[icon=view-list]:before, en-icon[icon=list]:before {
+    content: "\e6e0"; }
+  en-icon[icon=view-gallery]:before {
+    content: "\e6d6"; }
+  en-icon[icon=import]:before {
+    content: "\e6dc"; }
+  en-icon[icon=export]:before {
+    content: "\e6dd"; }
+  en-icon[icon=comment]:before {
+    content: "\ea50"; }
+  en-icon[icon=chat]:before {
+    content: "\ea85"; }
+  en-icon[icon=chat-more]:before {
+    content: "\ea86"; }
+  en-icon[icon=chatting]:before {
+    content: "\ea87"; }
+  en-icon[icon=chat-outline]:before {
+    content: "\ea88"; }
+  en-icon[icon=chat-more-outline]:before {
+    content: "\ea89"; }
+  en-icon[icon=chatting-outline]:before {
+    content: "\ea8a"; }
+  en-icon[icon=cloud-upload]:before {
+    content: "\e900"; }
+  en-icon[icon=cloud-download]:before {
+    content: "\e903"; }
+  en-icon[icon=cloud]:before {
+    content: "\ea2b"; }
+  en-icon[icon=cloud-plus]:before {
+    content: "\ea2c"; }
+  en-icon[icon=cloud-minus]:before {
+    content: "\ea2d"; }
+  en-icon[icon=cloud-x]:before {
+    content: "\ea2e"; }
+  en-icon[icon=cloud-check]:before {
+    content: "\ea2f"; }
+  en-icon[icon=cloud-connect]:before {
+    content: "\ea30"; }
+  en-icon[icon=cloud-transmit]:before {
+    content: "\ea31"; }
+  en-icon[icon=cloud-refresh]:before {
+    content: "\ea32"; }
+  en-icon[icon=cloud-sync]:before {
+    content: "\ea33"; }
+  en-icon[icon=cloud-progress]:before {
+    content: "\ea34"; }
+  en-icon[icon=cloud-outline]:before {
+    content: "\ea35"; }
+  en-icon[icon=cloud-outline-plus]:before {
+    content: "\ea36"; }
+  en-icon[icon=cloud-outline-minus]:before {
+    content: "\ea37"; }
+  en-icon[icon=cloud-outline-x]:before {
+    content: "\ea38"; }
+  en-icon[icon=cloud-outline-check]:before {
+    content: "\ea39"; }
+  en-icon[icon=cloud-outline-connect]:before {
+    content: "\ea3a"; }
+  en-icon[icon=cloud-outline-transmit]:before {
+    content: "\ea3b"; }
+  en-icon[icon=cloud-outline-upload]:before {
+    content: "\ea3c"; }
+  en-icon[icon=cloud-outline-download]:before {
+    content: "\ea3d"; }
+  en-icon[icon=cloud-outline-refresh]:before {
+    content: "\ea3e"; }
+  en-icon[icon=cloud-outline-sync]:before {
+    content: "\ea3f"; }
+  en-icon[icon=download]:before {
+    content: "\e674"; }
+  en-icon[icon=thumb-up]:before {
+    content: "\e904"; }
+  en-icon[icon=thumb-down]:before {
+    content: "\e905"; }
+  en-icon[icon=link]:before {
+    content: "\e6de"; }
+  en-icon[icon=unlink]:before {
+    content: "\e90c"; }
+  en-icon[icon=edit-block]:before {
+    content: "\e90d"; }
+  en-icon[icon=menu]:before {
+    content: "\e68a"; }
+  en-icon[icon=new-window]:before {
+    content: "\e60a"; }
+  en-icon[icon=arrows-transfer]:before {
+    content: "\ea41"; }
+  en-icon[icon=split-right]:before {
+    content: "\ea21"; }
+  en-icon[icon=split-up]:before {
+    content: "\ea22"; }
+  en-icon[icon=arrow-down-left]:before, en-icon[icon=return]:before {
+    content: "\ea1a"; }
+  en-icon[icon=height-increase]:before {
+    content: "\e90e"; }
+  en-icon[icon=height-decrease]:before {
+    content: "\e90f"; }
+  en-icon[icon=width-increase]:before {
+    content: "\e910"; }
+  en-icon[icon=width-decrease]:before {
+    content: "\e911"; }
+  en-icon[icon=arrow-right-circle]:before {
+    content: "\e912"; }
+  en-icon[icon=arrow-left-circle]:before {
+    content: "\e913"; }
+  en-icon[icon=arrow-down-circle]:before {
+    content: "\e914"; }
+  en-icon[icon=arrow-up-circle]:before {
+    content: "\e928"; }
+  en-icon[icon=arrow-move]:before {
+    content: "\e929"; }
+  en-icon[icon=arrow-right]:before {
+    content: "\e92a"; }
+  en-icon[icon=arrow-left]:before {
+    content: "\e92b"; }
+  en-icon[icon=arrow-up]:before {
+    content: "\e92c"; }
+  en-icon[icon=arrow-down]:before {
+    content: "\e92d"; }
+  en-icon[icon=caret-left]:before {
+    content: "\e94e"; }
+  en-icon[icon=caret-right]:before {
+    content: "\e94f"; }
+  en-icon[icon=caret-down]:before {
+    content: "\e94d"; }
+  en-icon[icon=caret-up]:before {
+    content: "\e931"; }
+  en-icon[icon=sort]:before {
+    content: "\e92e"; }
+  en-icon[icon=sort-down]:before {
+    content: "\e930"; }
+  en-icon[icon=sort-up]:before {
+    content: "\e92f"; }
+  en-icon[icon=chevron-up-double]:before {
+    content: "\e950"; }
+  en-icon[icon=chevron-down-double]:before {
+    content: "\e951"; }
+  en-icon[icon=chevron-left-double]:before {
+    content: "\e952"; }
+  en-icon[icon=chevron-right-double]:before {
+    content: "\e953"; }
+  en-icon[icon=chevron-up]:before {
+    content: "\e954"; }
+  en-icon[icon=chevron-down]:before {
+    content: "\e955"; }
+  en-icon[icon=chevron-left]:before {
+    content: "\e956"; }
+  en-icon[icon=chevron-right]:before {
+    content: "\e957"; }
+  en-icon[icon=chevron-up-circle]:before {
+    content: "\e958"; }
+  en-icon[icon=chevron-down-circle]:before {
+    content: "\e95c"; }
+  en-icon[icon=chevron-left-circle]:before {
+    content: "\e95d"; }
+  en-icon[icon=chevron-right-circle]:before {
+    content: "\e960"; }
+  en-icon[icon=chevron-up-ring]:before {
+    content: "\e962"; }
+  en-icon[icon=chevron-down-ring]:before {
+    content: "\e964"; }
+  en-icon[icon=chevron-left-ring]:before {
+    content: "\e968"; }
+  en-icon[icon=chevron-right-ring]:before {
+    content: "\e969"; }
+  en-icon[icon=asterisk]:before {
+    content: "\ea67"; }
+  en-icon[icon=hash]:before {
+    content: "\ea5c"; }
+  en-icon[icon=at]:before {
+    content: "\ea42"; }
+  en-icon[icon=plus-minus]:before {
+    content: "\ea45"; }
+  en-icon[icon=plus]:before {
+    content: "\e96a"; }
+  en-icon[icon=minus]:before {
+    content: "\e96b"; }
+  en-icon[icon=check]:before {
+    content: "\e96c"; }
+  en-icon[icon=x]:before {
+    content: "\e96d"; }
+  en-icon[icon=circle]:before {
+    content: "\ea56"; }
+  en-icon[icon=plus-circle]:before {
+    content: "\e96e"; }
+  en-icon[icon=minus-circle]:before {
+    content: "\e96f"; }
+  en-icon[icon=check-circle]:before {
+    content: "\e970"; }
+  en-icon[icon=x-circle]:before {
+    content: "\e971"; }
+  en-icon[icon=help]:before {
+    content: "\e972"; }
+  en-icon[icon=info]:before {
+    content: "\e973"; }
+  en-icon[icon=alert-circle]:before {
+    content: "\e974"; }
+  en-icon[icon=alert]:before {
+    content: "\e975"; }
+  en-icon[icon=ring]:before {
+    content: "\ea57"; }
+  en-icon[icon=plus-ring]:before {
+    content: "\ea58"; }
+  en-icon[icon=minus-ring]:before {
+    content: "\ea59"; }
+  en-icon[icon=check-ring]:before {
+    content: "\e976"; }
+  en-icon[icon=x-ring]:before {
+    content: "\e977"; }
+  en-icon[icon=block]:before {
+    content: "\ea5a"; }
+  en-icon[icon=plus-block]:before {
+    content: "\e978"; }
+  en-icon[icon=minus-block]:before {
+    content: "\e979"; }
+  en-icon[icon=check-block]:before {
+    content: "\e97a"; }
+  en-icon[icon=x-block]:before {
+    content: "\ea51"; }
+  en-icon[icon=block-outline]:before {
+    content: "\ea5b"; }
+  en-icon[icon=plus-block-outline]:before {
+    content: "\ea52"; }
+  en-icon[icon=minus-block-outline]:before {
+    content: "\ea53"; }
+  en-icon[icon=check-block-outline]:before {
+    content: "\ea54"; }
+  en-icon[icon=x-block-outline]:before {
+    content: "\ea55"; }
+  en-icon[icon=ban]:before {
+    content: "\e97b"; }
+  en-icon[icon=currency-usd]:before {
+    content: "\e97c"; }
+  en-icon[icon=currency-lire]:before {
+    content: "\e97d"; }
+  en-icon[icon=currency-euro]:before {
+    content: "\e97e"; }
+  en-icon[icon=gift-card]:before {
+    content: "\e947"; }
+  en-icon[icon=signed-check]:before {
+    content: "\e948"; }
+  en-icon[icon=tax]:before {
+    content: "\e949"; }
+  en-icon[icon=cash]:before {
+    content: "\e94a"; }
+  en-icon[icon=money-exchange]:before {
+    content: "\e94b"; }
+  en-icon[icon=money]:before {
+    content: "\e94c"; }
+  en-icon[icon=card]:before {
+    content: "\e91d"; }
+  en-icon[icon=card-front]:before {
+    content: "\e91e"; }
+  en-icon[icon=card-plus]:before {
+    content: "\e91f"; }
+  en-icon[icon=card-minus]:before {
+    content: "\e920"; }
+  en-icon[icon=card-check]:before {
+    content: "\e921"; }
+  en-icon[icon=card-x]:before {
+    content: "\e922"; }
+  en-icon[icon=card-lock]:before {
+    content: "\e923"; }
+  en-icon[icon=card-flag]:before {
+    content: "\e924"; }
+  en-icon[icon=cards]:before {
+    content: "\e925"; }
+  en-icon[icon=paragraph]:before {
+    content: "\ea6c"; }
+  en-icon[icon=superscript]:before {
+    content: "\ea6d"; }
+  en-icon[icon=subscript]:before {
+    content: "\ea6e"; }
+  en-icon[icon=strikethrough]:before {
+    content: "\ea6f"; }
+  en-icon[icon=box-fit]:before {
+    content: "\ea70"; }
+  en-icon[icon=box-expand]:before {
+    content: "\ea74"; }
+  en-icon[icon=box-compress]:before {
+    content: "\ea75"; }
+  en-icon[icon=crop]:before {
+    content: "\ea71"; }
+  en-icon[icon=font]:before {
+    content: "\ea72"; }
+  en-icon[icon=paint-bucket]:before {
+    content: "\ea73"; }
+  en-icon[icon=flip]:before, en-icon[icon=flip-horizontal]:before {
+    content: "\ea76"; }
+  en-icon[icon=flip-vertical]:before {
+    content: "\ea77"; }
+  en-icon[icon=bold]:before {
+    content: "\ea46"; }
+  en-icon[icon=italic]:before {
+    content: "\ea47"; }
+  en-icon[icon=underline]:before {
+    content: "\ea48"; }
+  en-icon[icon=align-left]:before {
+    content: "\ea49"; }
+  en-icon[icon=align-right]:before {
+    content: "\ea4b"; }
+  en-icon[icon=align-center]:before {
+    content: "\ea4c"; }
+  en-icon[icon=align-justify]:before {
+    content: "\ea4a"; }
+  en-icon[icon=indent]:before, en-icon[icon=indent-increase]:before {
+    content: "\ea78"; }
+  en-icon[icon=indent-decrease]:before {
+    content: "\ea79"; }
+  en-icon[icon=palette]:before {
+    content: "\ea26"; }
+  en-icon[icon=ruler]:before {
+    content: "\e906"; }
+  en-icon[icon=layer-text]:before {
+    content: "\e907"; }
+  en-icon[icon=scissors]:before {
+    content: "\e908"; }
+  en-icon[icon=barcode]:before {
+    content: "\e6f2"; }
+  en-icon[icon=text]:before {
+    content: "\e6f3"; }
+  en-icon[icon=invert-color]:before {
+    content: "\e6e5"; }
+  en-icon[icon=layer-grid]:before {
+    content: "\e6e6"; }
+  en-icon[icon=layer]:before {
+    content: "\e6e7"; }
+  en-icon[icon=rotate-left]:before {
+    content: "\e6e8"; }
+  en-icon[icon=rotate-right]:before {
+    content: "\e6e9"; }
+  en-icon[icon=layer-duplicate]:before {
+    content: "\e6ea"; }
+  en-icon[icon=eye-hidden]:before {
+    content: "\e6eb"; }
+  en-icon[icon=eye-visible]:before, en-icon[icon=eye]:before {
+    content: "\e6ec"; }
+  en-icon[icon=lawndart]:before {
+    content: "\ea2a"; }
+  en-icon[icon=divide-right]:before {
+    content: "\ea23"; }
+  en-icon[icon=divide-up]:before {
+    content: "\ea24"; }
+  en-icon[icon=cube]:before {
+    content: "\e95e"; }
+  en-icon[icon=product]:before {
+    content: "\e95e"; }
+  en-icon[icon=cubes]:before {
+    content: "\e95f"; }
+  en-icon[icon=product-group]:before {
+    content: "\e95f"; }
+  en-icon[icon=cube-search]:before {
+    content: "\ea1b"; }
+  en-icon[icon=product-search]:before {
+    content: "\ea1b"; }
+  en-icon[icon=cube-swap]:before {
+    content: "\ea1c"; }
+  en-icon[icon=product-variations]:before {
+    content: "\ea1c"; }
+  en-icon[icon=cube-frame]:before {
+    content: "\ea10"; }
+  en-icon[icon=product-assembly]:before {
+    content: "\ea10"; }
+  en-icon[icon=safe]:before {
+    content: "\ea11"; }
+  en-icon[icon=clock-out]:before {
+    content: "\e97f"; }
+  en-icon[icon=clock-in]:before {
+    content: "\e980"; }
+  en-icon[icon=clock]:before {
+    content: "\e981"; }
+  en-icon[icon=clock-history]:before {
+    content: "\ea68"; }
+  en-icon[icon=dashboard]:before {
+    content: "\e982"; }
+  en-icon[icon=library]:before {
+    content: "\e983"; }
+  en-icon[icon=institution]:before {
+    content: "\e984"; }
+  en-icon[icon=briefcase]:before {
+    content: "\e985"; }
+  en-icon[icon=service]:before {
+    content: "\e967"; }
+  en-icon[icon=service-variations]:before {
+    content: "\e966"; }
+  en-icon[icon=hourglass-dollar]:before {
+    content: "\e959"; }
+  en-icon[icon=hold-sale]:before {
+    content: "\e959"; }
+  en-icon[icon=brand]:before {
+    content: "\e95a"; }
+  en-icon[icon=brand-group]:before {
+    content: "\e95b"; }
+  en-icon[icon=pen-sign]:before {
+    content: "\e961"; }
+  en-icon[icon=handshake]:before {
+    content: "\e963"; }
+  en-icon[icon=vendor]:before {
+    content: "\e926"; }
+  en-icon[icon=matrix]:before {
+    content: "\e927"; }
+  en-icon[icon=clipboard-list]:before {
+    content: "\e986"; }
+  en-icon[icon=clipboard-checklist]:before {
+    content: "\e987"; }
+  en-icon[icon=clipboard]:before {
+    content: "\e988"; }
+  en-icon[icon=note]:before {
+    content: "\e989"; }
+  en-icon[icon=notebook]:before {
+    content: "\e98a"; }
+  en-icon[icon=doc]:before {
+    content: "\e98b"; }
+  en-icon[icon=docs]:before {
+    content: "\e98c"; }
+  en-icon[icon=doc-edit]:before {
+    content: "\ea7a"; }
+  en-icon[icon=certificate]:before {
+    content: "\e98d"; }
+  en-icon[icon=doc-sign]:before {
+    content: "\e98e"; }
+  en-icon[icon=doc-printed]:before, en-icon[icon=work-order]:before {
+    content: "\e98f"; }
+  en-icon[icon=doc-graph]:before {
+    content: "\e990"; }
+  en-icon[icon=invoice]:before {
+    content: "\e991"; }
+  en-icon[icon=file]:before {
+    content: "\e992"; }
+  en-icon[icon=file-text]:before {
+    content: "\ea7b"; }
+  en-icon[icon=files]:before {
+    content: "\ea7c"; }
+  en-icon[icon=file-copy]:before {
+    content: "\ea7d"; }
+  en-icon[icon=folder]:before {
+    content: "\e993"; }
+  en-icon[icon=folder-open]:before {
+    content: "\e994"; }
+  en-icon[icon=box-clipboard]:before {
+    content: "\ea12"; }
+  en-icon[icon=box]:before {
+    content: "\e909"; }
+  en-icon[icon=box-fragile]:before {
+    content: "\e90a"; }
+  en-icon[icon=box-umbrella]:before {
+    content: "\e932"; }
+  en-icon[icon=box-pack]:before {
+    content: "\e933"; }
+  en-icon[icon=box-unpack]:before {
+    content: "\e934"; }
+  en-icon[icon=box-check]:before {
+    content: "\e935"; }
+  en-icon[icon=box-plus]:before {
+    content: "\e936"; }
+  en-icon[icon=box-minus]:before {
+    content: "\e937"; }
+  en-icon[icon=box-x]:before {
+    content: "\e938"; }
+  en-icon[icon=box-search]:before {
+    content: "\e939"; }
+  en-icon[icon=box-flag]:before {
+    content: "\e93a"; }
+  en-icon[icon=box-lock]:before {
+    content: "\e93b"; }
+  en-icon[icon=box-shield]:before {
+    content: "\e93c"; }
+  en-icon[icon=box-weight]:before {
+    content: "\e93d"; }
+  en-icon[icon=box-clock]:before {
+    content: "\e93e"; }
+  en-icon[icon=box-timer]:before {
+    content: "\e93f"; }
+  en-icon[icon=box-conveyor]:before {
+    content: "\e940"; }
+  en-icon[icon=box-conveyor-moving]:before {
+    content: "\e941"; }
+  en-icon[icon=box-dolly]:before {
+    content: "\e942"; }
+  en-icon[icon=box-group]:before {
+    content: "\e943"; }
+  en-icon[icon=box-storage]:before {
+    content: "\e944"; }
+  en-icon[icon=truck]:before {
+    content: "\e995"; }
+  en-icon[icon=calendar]:before {
+    content: "\e996"; }
+  en-icon[icon=calendar-weeks]:before, en-icon[icon=calendar-days]:before {
+    content: "\e997"; }
+  en-icon[icon=calendar-clock]:before {
+    content: "\ea8b"; }
+  en-icon[icon=image]:before {
+    content: "\e998"; }
+  en-icon[icon=images]:before {
+    content: "\e999"; }
+  en-icon[icon=camera]:before {
+    content: "\e99a"; }
+  en-icon[icon=video-camera]:before {
+    content: "\e99b"; }
+  en-icon[icon=media-skip-first]:before, en-icon[icon=media-first]:before {
+    content: "\e9a2"; }
+  en-icon[icon=media-prev]:before, en-icon[icon=media-previous]:before {
+    content: "\ea7e"; }
+  en-icon[icon=media-rewind]:before, en-icon[icon=media-rw]:before {
+    content: "\e9a1"; }
+  en-icon[icon=media-play]:before {
+    content: "\e9a0"; }
+  en-icon[icon=media-pause]:before {
+    content: "\e99f"; }
+  en-icon[icon=media-stop]:before {
+    content: "\e99e"; }
+  en-icon[icon=media-fastforward]:before, en-icon[icon=media-ff]:before {
+    content: "\e99d"; }
+  en-icon[icon=media-next]:before {
+    content: "\ea7f"; }
+  en-icon[icon=media-skip-last]:before, en-icon[icon=media-last]:before {
+    content: "\e99c"; }
+  en-icon[icon=media-eject]:before {
+    content: "\ea80"; }
+  en-icon[icon=media-skip-last-block]:before {
+    content: "\e9a3"; }
+  en-icon[icon=media-next-block]:before {
+    content: "\e9a4"; }
+  en-icon[icon=media-stop-block]:before {
+    content: "\e9a5"; }
+  en-icon[icon=media-pause-block]:before {
+    content: "\e9a6"; }
+  en-icon[icon=media-play-block]:before {
+    content: "\e9a7"; }
+  en-icon[icon=media-prev-block]:before {
+    content: "\e9a8"; }
+  en-icon[icon=media-skip-first-block]:before {
+    content: "\e9a9"; }
+  en-icon[icon=search-heart]:before {
+    content: "\ea4d"; }
+  en-icon[icon=heart]:before {
+    content: "\ea4e"; }
+  en-icon[icon=heart-outline]:before {
+    content: "\ea4f"; }
+  en-icon[icon=tablet]:before {
+    content: "\e9aa"; }
+  en-icon[icon=smartphone]:before {
+    content: "\e9ab"; }
+  en-icon[icon=screen]:before {
+    content: "\e9ac"; }
+  en-icon[icon=key]:before {
+    content: "\e9ad"; }
+  en-icon[icon=umbrella]:before {
+    content: "\e9ae"; }
+  en-icon[icon=home]:before {
+    content: "\e9af"; }
+  en-icon[icon=help-case]:before {
+    content: "\e9b0"; }
+  en-icon[icon=location]:before {
+    content: "\e9b1"; }
+  en-icon[icon=location-marker-outline]:before {
+    content: "\ea81"; }
+  en-icon[icon=location-marker]:before {
+    content: "\e9b2"; }
+  en-icon[icon=book-open]:before {
+    content: "\e9b3"; }
+  en-icon[icon=hourglass]:before {
+    content: "\e9b4"; }
+  en-icon[icon=paperclip]:before {
+    content: "\e9b5"; }
+  en-icon[icon=bullet]:before {
+    content: "\e9b6"; }
+  en-icon[icon=star]:before {
+    content: "\e9b7"; }
+  en-icon[icon=flag]:before {
+    content: "\e9b8"; }
+  en-icon[icon=na]:before {
+    content: "\e9b9"; }
+  en-icon[icon=target]:before {
+    content: "\e9ba"; }
+  en-icon[icon=flame]:before {
+    content: "\e9bb"; }
+  en-icon[icon=logo-rp]:before {
+    content: "\e9bc"; }
+  en-icon[icon=earth]:before {
+    content: "\e9bd"; }
+  en-icon[icon=puzzle]:before {
+    content: "\e9be"; }
+  en-icon[icon=bookmark]:before {
+    content: "\e9bf"; }
+  en-icon[icon=bookmarks]:before {
+    content: "\e9c0"; }
+  en-icon[icon=step-1]:before {
+    content: "\e9c1"; }
+  en-icon[icon=step-2]:before {
+    content: "\e9c2"; }
+  en-icon[icon=step-3]:before {
+    content: "\e9c3"; }
+  en-icon[icon=step-4]:before {
+    content: "\e9c4"; }
+  en-icon[icon=step-5]:before {
+    content: "\e9c5"; }
+  en-icon[icon=step-6]:before {
+    content: "\e9c6"; }
+  en-icon[icon=step-7]:before {
+    content: "\e9c7"; }
+  en-icon[icon=step-8]:before {
+    content: "\e9c8"; }
+  en-icon[icon=step-9]:before {
+    content: "\e9c9"; }
+  en-icon[icon=step-10]:before {
+    content: "\e9ca"; }
+  en-icon[icon=employee]:before {
+    content: "\e9cb"; }
+  en-icon[icon=employee-check]:before {
+    content: "\e9cc"; }
+  en-icon[icon=employee-plus]:before {
+    content: "\e9cd"; }
+  en-icon[icon=employee-minus]:before {
+    content: "\e9ce"; }
+  en-icon[icon=employee-x]:before {
+    content: "\e9cf"; }
+  en-icon[icon=employee-search]:before {
+    content: "\e9d0"; }
+  en-icon[icon=employee-flag]:before {
+    content: "\e9d1"; }
+  en-icon[icon=employee-lock]:before {
+    content: "\e9d2"; }
+  en-icon[icon=employee-group]:before {
+    content: "\e9d3"; }
+  en-icon[icon=customer]:before {
+    content: "\e6f1"; }
+  en-icon[icon=customer-check]:before {
+    content: "\e6ed"; }
+  en-icon[icon=customer-plus]:before {
+    content: "\e6ef"; }
+  en-icon[icon=customer-minus]:before {
+    content: "\e6ee"; }
+  en-icon[icon=customers]:before {
+    content: "\e6f0"; }
+  en-icon[icon=profile]:before {
+    content: "\e9d4"; }
+  en-icon[icon=account]:before {
+    content: "\e9d5"; }
+  en-icon[icon=man]:before {
+    content: "\e9d6"; }
+  en-icon[icon=woman]:before {
+    content: "\e9d7"; }
+  en-icon[icon=people]:before {
+    content: "\e9d8"; }
+  en-icon[icon=receipt-curled]:before {
+    content: "\ea13"; }
+  en-icon[icon=receipt-print]:before {
+    content: "\ea14"; }
+  en-icon[icon=receipt]:before {
+    content: "\ea15"; }
+  en-icon[icon=receipt2]:before {
+    content: "\ea16"; }
+  en-icon[icon=receipt3]:before {
+    content: "\ea17"; }
+  en-icon[icon=store]:before {
+    content: "\e9d9"; }
+  en-icon[icon=pos]:before {
+    content: "\e965"; }
+  en-icon[icon=barcode-scan]:before {
+    content: "\e945"; }
+  en-icon[icon=barcode-search]:before {
+    content: "\e946"; }
+  en-icon[icon=qrcode]:before {
+    content: "\e9da"; }
+  en-icon[icon=cart]:before {
+    content: "\e915"; }
+  en-icon[icon=cart-check]:before {
+    content: "\e916"; }
+  en-icon[icon=cart-plus]:before {
+    content: "\e917"; }
+  en-icon[icon=cart-minus]:before {
+    content: "\e918"; }
+  en-icon[icon=cart-x]:before {
+    content: "\e919"; }
+  en-icon[icon=cart-search]:before {
+    content: "\e91a"; }
+  en-icon[icon=cart-flag]:before {
+    content: "\e91b"; }
+  en-icon[icon=cart-lock]:before {
+    content: "\e91c"; }
+  en-icon[icon=gift]:before {
+    content: "\e9db"; }
+  en-icon[icon=pricing]:before {
+    content: "\e9dc"; }
+  en-icon[icon=discount]:before {
+    content: "\e9dd"; }
+  en-icon[icon=ticket]:before {
+    content: "\e9de"; }
+  en-icon[icon=tag]:before {
+    content: "\e9df"; }
+  en-icon[icon=tags]:before {
+    content: "\e9e0"; }
+  en-icon[icon=tag-price]:before {
+    content: "\e9e1"; }
+  en-icon[icon=chart-timeline]:before, en-icon[icon=timeline]:before {
+    content: "\ea69"; }
+  en-icon[icon=chart-candlestick]:before {
+    content: "\e9e2"; }
+  en-icon[icon=chart-bar-asc]:before {
+    content: "\e9e3"; }
+  en-icon[icon=chart-bar-desc]:before {
+    content: "\e9e4"; }
+  en-icon[icon=chart-bar]:before {
+    content: "\e9e5"; }
+  en-icon[icon=chart-bar-horizontal-asc]:before {
+    content: "\e9e6"; }
+  en-icon[icon=chart-bar-horizontal-desc]:before {
+    content: "\e9e7"; }
+  en-icon[icon=chart-bar-line-desc]:before {
+    content: "\e9e8"; }
+  en-icon[icon=chart-bar-line-asc]:before {
+    content: "\e9e9"; }
+  en-icon[icon=chart-bar-line-stagger-asc]:before {
+    content: "\e9ea"; }
+  en-icon[icon=chart-spline-circle]:before {
+    content: "\e9eb"; }
+  en-icon[icon=chart-spline]:before {
+    content: "\e9ec"; }
+  en-icon[icon=chart-spline-multi]:before {
+    content: "\e9ed"; }
+  en-icon[icon=chart-line-multi]:before {
+    content: "\e9ee"; }
+  en-icon[icon=chart-line]:before {
+    content: "\e9ef"; }
+  en-icon[icon=chart-area-range]:before {
+    content: "\e9f0"; }
+  en-icon[icon=chart-area]:before {
+    content: "\e9f1"; }
+  en-icon[icon=chart-area-multi]:before {
+    content: "\ea25"; }
+  en-icon[icon=chart-bar-multi-asc]:before {
+    content: "\e9f2"; }
+  en-icon[icon=chart-bar-multi-desc]:before {
+    content: "\e9f3"; }
+  en-icon[icon=chart-bar-graph]:before {
+    content: "\e9f4"; }
+  en-icon[icon=chart-line-graph]:before {
+    content: "\e9f5"; }
+  en-icon[icon=chart-doughnut-multi]:before {
+    content: "\e9f6"; }
+  en-icon[icon=chart-semi-doughnut-pie]:before {
+    content: "\e9f7"; }
+  en-icon[icon=chart-doughnut]:before {
+    content: "\e9f8"; }
+  en-icon[icon=chart-semi-doughnut-multi]:before {
+    content: "\e9f9"; }
+  en-icon[icon=chart-pyramid-desc]:before {
+    content: "\e9fa"; }
+  en-icon[icon=chart-pyramid-asc]:before {
+    content: "\e9fb"; }
+  en-icon[icon=chart-pyramid]:before {
+    content: "\e9fc"; }
+  en-icon[icon=stats-bar]:before {
+    content: "\e9fd"; }
+  en-icon[icon=sitemap]:before {
+    content: "\e9fe"; }
+  en-icon[icon=stats]:before {
+    content: "\e9ff"; }
+  en-icon[icon=stats-pie]:before {
+    content: "\ea00"; }
+  en-icon[icon=chart-pie-multi]:before {
+    content: "\ea01"; }
+  en-icon[icon=chart-pie-single]:before {
+    content: "\ea02"; }
+  en-icon[icon=book-contacts]:before {
+    content: "\ea18"; }
+  en-icon[icon=book-address]:before {
+    content: "\ea19"; }
+  en-icon[icon=mail]:before {
+    content: "\ea03"; }
+  en-icon[icon=mail-open]:before {
+    content: "\ea04"; }
+  en-icon[icon=mail-read]:before {
+    content: "\ea05"; }
+  en-icon[icon=mail-outline]:before {
+    content: "\ea82"; }
+  en-icon[icon=mail-open-outline]:before {
+    content: "\ea83"; }
+  en-icon[icon=mail-read-outline]:before {
+    content: "\ea84"; }
+  en-icon[icon=inbox]:before {
+    content: "\ea06"; }
+  en-icon[icon=inbox-new]:before {
+    content: "\ea07"; }
+  en-icon[icon=inbox-empty]:before {
+    content: "\ea08"; }
+  en-icon[icon=inbox-outgoing]:before {
+    content: "\ea09"; }
+  en-icon[icon=inbox-incoming]:before {
+    content: "\ea0a"; }
+  en-icon[icon=email-block]:before {
+    content: "\ea0b"; }
+  en-icon[icon=phone]:before {
+    content: "\ea0c"; }
+  en-icon[icon=phone-block]:before {
+    content: "\ea0d"; }
+  en-icon[icon=phone-24hr]:before {
+    content: "\ea0e"; }
+  en-icon[icon=headset]:before {
+    content: "\ea0f"; }
+  en-icon[icon=file-avi]:before {
+    content: "\e692"; }
+  en-icon[icon=file-bmp]:before {
+    content: "\e693"; }
+  en-icon[icon=file-cpcl]:before {
+    content: "\e694"; }
+  en-icon[icon=file-cpf]:before {
+    content: "\e695"; }
+  en-icon[icon=file-csv]:before {
+    content: "\e696"; }
+  en-icon[icon=file-dat]:before {
+    content: "\e697"; }
+  en-icon[icon=file-dib]:before {
+    content: "\e698"; }
+  en-icon[icon=file-doc]:before {
+    content: "\e699"; }
+  en-icon[icon=file-docx]:before {
+    content: "\e69a"; }
+  en-icon[icon=file-dwg]:before {
+    content: "\e69b"; }
+  en-icon[icon=file-dxf]:before {
+    content: "\e69c"; }
+  en-icon[icon=file-emf]:before {
+    content: "\e69d"; }
+  en-icon[icon=file-epl]:before {
+    content: "\e69e"; }
+  en-icon[icon=file-epl2]:before {
+    content: "\e69f"; }
+  en-icon[icon=file-eps]:before {
+    content: "\e6a0"; }
+  en-icon[icon=file-fmt]:before {
+    content: "\e6a1"; }
+  en-icon[icon=file-gif]:before {
+    content: "\e6a2"; }
+  en-icon[icon=file-html]:before {
+    content: "\e6a3"; }
+  en-icon[icon=file-ics]:before {
+    content: "\e6a4"; }
+  en-icon[icon=file-iso]:before {
+    content: "\e6a5"; }
+  en-icon[icon=file-jpg]:before {
+    content: "\e6a6"; }
+  en-icon[icon=file-m4v]:before {
+    content: "\e6a7"; }
+  en-icon[icon=file-mid]:before {
+    content: "\e6a8"; }
+  en-icon[icon=file-mov]:before {
+    content: "\e6a9"; }
+  en-icon[icon=file-mp3]:before {
+    content: "\e6aa"; }
+  en-icon[icon=file-mp4]:before {
+    content: "\e6ab"; }
+  en-icon[icon=file-mpg]:before {
+    content: "\e6ac"; }
+  en-icon[icon=file-num]:before {
+    content: "\e6ad"; }
+  en-icon[icon=file-odp]:before {
+    content: "\e6ae"; }
+  en-icon[icon=file-ods]:before {
+    content: "\e6af"; }
+  en-icon[icon=file-odt]:before {
+    content: "\e6b0"; }
+  en-icon[icon=file-ots]:before {
+    content: "\e6b1"; }
+  en-icon[icon=file-ott]:before {
+    content: "\e6b2"; }
+  en-icon[icon=file-oxps]:before {
+    content: "\e6b3"; }
+  en-icon[icon=file-pcx]:before {
+    content: "\e6b4"; }
+  en-icon[icon=file-pdf]:before {
+    content: "\e6b5"; }
+  en-icon[icon=file-pgs]:before {
+    content: "\e6b6"; }
+  en-icon[icon=file-png]:before {
+    content: "\e6b7"; }
+  en-icon[icon=file-ppd]:before {
+    content: "\e6b8"; }
+  en-icon[icon=file-pps]:before {
+    content: "\e6b9"; }
+  en-icon[icon=file-ppt]:before {
+    content: "\e6ba"; }
+  en-icon[icon=file-ps]:before {
+    content: "\e6bb"; }
+  en-icon[icon=file-qt]:before {
+    content: "\e6bc"; }
+  en-icon[icon=file-rar]:before {
+    content: "\e6bd"; }
+  en-icon[icon=file-rtf]:before {
+    content: "\e6be"; }
+  en-icon[icon=file-sql]:before {
+    content: "\e6bf"; }
+  en-icon[icon=file-tga]:before {
+    content: "\e6c0"; }
+  en-icon[icon=file-tgz]:before {
+    content: "\e6c1"; }
+  en-icon[icon=file-tiff]:before {
+    content: "\e6c2"; }
+  en-icon[icon=file-txt]:before {
+    content: "\e6c3"; }
+  en-icon[icon=file-wav]:before {
+    content: "\e6c4"; }
+  en-icon[icon=file-xls]:before {
+    content: "\e6c5"; }
+  en-icon[icon=file-xlsx]:before {
+    content: "\e6c6"; }
+  en-icon[icon=file-xml]:before {
+    content: "\e6c7"; }
+  en-icon[icon=file-xps]:before {
+    content: "\e6c8"; }
+  en-icon[icon=file-yml]:before {
+    content: "\e6c9"; }
+  en-icon[icon=file-zip]:before {
+    content: "\e6ca"; }
+  en-icon[icon=file-zpl]:before {
+    content: "\e6cb"; }
