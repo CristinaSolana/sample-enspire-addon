@@ -104,7 +104,7 @@ function componentController($scope, childAppService) {
     function receiveMessage(ev) {
         // console.log('receive message to iFrame');
 
-        if(ev.origin !== 'http://localhost:3000') return;
+        if(ev.origin !== 'https://localhost.retailpoint.com:3000') return;
 
         var message = ev.data;
         if(!message.callback) return;
