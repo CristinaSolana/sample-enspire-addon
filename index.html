@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="styles.css">
-    <link type="text/css" rel="stylesheet" href="fonts/icons.css">
+    <link type="text/css" rel="stylesheet" href="assets/styles.css">
+    <link type="text/css" rel="stylesheet" href="assets/fonts/icons.css">
 
     <script type="text/javascript" src="http://localhost:3000/backoffice/bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="http://localhost:3000/backoffice/bower_components/angular-animate/angular-animate.js"></script>
@@ -249,8 +249,9 @@
     <script type="text/javascript" src="http://localhost:3000/backoffice/bower_components/enspire.ui/src/components/win/winFooter/winFooterDirective.js"></script>
     <script type="text/javascript" src="http://localhost:3000/backoffice/bower_components/enspire.ui/src/components/win/winHeader/winHeaderDirective.js"></script>
 
-    <script src="app.js"></script>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/services/addon.js"></script>
+    <script type="text/javascript" src="js/controllers/addon.js"></script>
 </head>
 <body ng-app="childApp">
     <div class="padding" layout="column" layout-fill ng-controller="childAppCtrl as ctrl">
@@ -307,7 +308,7 @@
                         <en-label class="uppercase" ng-class="{'label-info': item.status === 'draft', 'label-success': item.status === 'closed'}">{{::item.status}}</en-label>
                     </en-collection-column>
                     <en-collection-column width="120" name="Date" sort-with="receiptDate">{{::item.receiptDate | date: shortDate}}</en-collection-column>
-                    <en-collection-column flex="20" name="Customer" sort-with="header.customer.fullName">
+                    <en-collection-column flex="120" name="Customer" sort-with="header.customer.fullName">
                         <span ng-class="{'faded':!item.header.customer.fullName}">{{::item.header.customer.fullName ? item.header.customer.fullName : 'Walk-In'}}</span>
                     </en-collection-column>
                     <en-collection-column width="120" name="Receipt #" field="reference"></en-collection-column>
