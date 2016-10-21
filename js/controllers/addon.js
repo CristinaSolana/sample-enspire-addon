@@ -99,12 +99,15 @@ function componentController($scope, childAppService) {
     window.onload = function() {
         messageContainer = document.getElementById('message');
         window.addEventListener('message', receiveMessage, false);
-    }
+    };
 
     function receiveMessage(ev) {
         // console.log('receive message to iFrame');
 
-        if(ev.origin !== 'https://localhost.retailpoint.com:3000') return;
+        if(ev.origin !== 'https://localhost.retailpoint.com:3000' || 'https://ghurka.us-east-1-dev.enspireplatform.com') {
+            console.log('origin url', ev.origin, 'is not allowed...');
+            return;
+        }
 
         var message = ev.data;
         if(!message.callback) return;
