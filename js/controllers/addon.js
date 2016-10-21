@@ -104,7 +104,7 @@ function componentController($scope, childAppService) {
     function receiveMessage(ev) {
         // console.log('receive message to iFrame');
 
-        if(ev.origin !== 'https://localhost.retailpoint.com:3000' || ev.origin !== 'https://ghurka.us-east-1-dev.enspireplatform.com') {
+        if(ev.origin !== 'https://localhost.retailpoint.com:3000' && ev.origin !== 'https://ghurka.us-east-1-dev.enspireplatform.com') {
             console.log('origin url', ev.origin, 'is not allowed...');
             return;
         }
