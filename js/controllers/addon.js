@@ -104,8 +104,8 @@ function componentController($scope, childAppService) {
     function receiveMessage(ev) {
         // console.log('receive message to iFrame');
 
-        if(ev.origin.indexOf('retailpoint.com') > -1 || ev.origin.indexOf('enspireplatform.com') > -1) {
-            console.log('origin url', ev.origin, 'indexOf...');
+        if(ev.origin.indexOf('retailpoint.com') === -1 && ev.origin.indexOf('enspireplatform.com') === -1) {
+            console.log('origin', ev.origin, 'not allowed');
         }
 
         if(ev.origin !== 'https://localhost.retailpoint.com:3000' && ev.origin !== 'https://ghurka.us-east-1-dev.enspireplatform.com') {
