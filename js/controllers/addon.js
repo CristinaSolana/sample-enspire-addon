@@ -104,7 +104,7 @@ function componentController($scope, childAppService) {
     function receiveMessage(ev) {
         // console.log('receive message to iFrame');
 
-        if(ev.origin.indexOf('retailpoint.com') || ev.origin.indexOf('enspireplatform.com')) {
+        if(ev.origin.indexOf('retailpoint.com') > -1 || ev.origin.indexOf('enspireplatform.com') > -1) {
             console.log('origin url', ev.origin, 'indexOf...');
         }
 
