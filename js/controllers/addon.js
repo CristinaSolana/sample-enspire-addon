@@ -26,6 +26,8 @@ function componentController($scope, childAppService) {
 
         setData: function(msg) {
             self.parentAppInfo = msg;
+            console.log('self.parentAppInfo', self.parentAppInfo);
+
             $scope.apply();
             // dev only
             if(messageContainer) {
