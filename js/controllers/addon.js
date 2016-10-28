@@ -20,7 +20,7 @@ function componentController($scope, childAppService) {
             document.getElementsByTagName('head')[0].appendChild(uiStyle);
 
             uiStyle.onload = function () {
-                postMsg({callback: 'cssLoaded'});
+                postMsg({action: 'cssLoaded'});
             };  
         },
 
@@ -61,7 +61,7 @@ function componentController($scope, childAppService) {
             // have to pass something saying which app it is
             // may not be necessary as apps should be isolated
             var data = {};    
-            data.callback = 'receiveAppInfo';
+            data.action = 'receiveAppInfo';
             data.app = apps[msg.appName];
 
             postMsg(data);
@@ -85,7 +85,7 @@ function componentController($scope, childAppService) {
             }
 
             var data = {};
-            data.callback = 'appStateChanged';
+            data.action = 'appStateChanged';
 
             postMsg(data);
         },
