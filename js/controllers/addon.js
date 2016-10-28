@@ -25,6 +25,7 @@ function componentController($scope, childAppService) {
         },
 
         setData: function(msg) {
+            self.parentAppInfo = msg;
             // dev only
             if(messageContainer) {
                 messageContainer.innerHTML = '<div layout="row">' +
@@ -113,8 +114,6 @@ function componentController($scope, childAppService) {
     // receive postMessage
     // @param {object} ev event object from postMessage
     function receiveMessage(ev) {
-        // console.log('receive message to iFrame');
-
         if(ev.origin.indexOf('retailpoint.com') === -1 && ev.origin.indexOf('enspireplatform.com') === -1) {
             console.log('origin', ev.origin, 'not allowed.');
             return;
