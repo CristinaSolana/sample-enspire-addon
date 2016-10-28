@@ -1,0 +1,27 @@
+<div flex layout="row" layout-align="start stretch" class="padding-sm">
+    <en-panel flex layout="row" class="padding margin-bottom-collapse panel-overview-highlights panel-overview-success">
+        <en-icon icon="briefcase" class="xl"></en-icon>
+        <div flex class="text-right">
+            <div class="uppercase">{{ctrl.parentAppInfo.client.clientId}}</div>
+            <small>{{ctrl.parentAppInfo.client.domain}}</small>
+        </div>
+    </en-panel>
+</div>
+<div flex layout="row" layout-align="start stretch" class="padding-sm">
+    <en-panel flex layout="row" class="padding margin-bottom-collapse panel-overview-highlights panel-overview-warn">
+        <en-icon icon="box-storage" class="xl"></en-icon>
+        <div flex class="text-right">
+            <div>{{ctrl.parentAppInfo.client.site.alias}}</div>
+            <small>{{ctrl.parentAppInfo.client.site.name}}</small>
+        </div>
+    </en-panel>
+</div>
+<div flex layout="row" layout-align="start stretch" class="padding-sm">
+    <en-panel flex layout="row" class="padding margin-bottom-collapse panel-overview-highlights panel-overview-info">
+        <en-icon icon="employee" class="xl"></en-icon>
+        <div flex class="text-right">
+            <div>{{ctrl.parentAppInfo.user.alias}}</div>
+            <small>{{ctrl.parentAppInfo.user.username}}</small>
+        </div>
+    </en-panel>
+</div>
