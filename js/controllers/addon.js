@@ -10,7 +10,6 @@ function componentController($scope, childAppService) {
     // may not be necessary as apps should be isolated
     var apps = childAppService.getApps();
 
-    var messageContainer;
     var callbacks = {
         init: function(msg) {
             var uiStyle = document.createElement('link');
@@ -26,41 +25,7 @@ function componentController($scope, childAppService) {
 
         setData: function(msg) {
             self.parentAppInfo = msg;
-            console.log('self.parentAppInfo', self.parentAppInfo);
-
             $scope.$apply();
-            // dev only
-            if(messageContainer) {
-                messageContainer.innerHTML = '<div layout="row">' +
-                    '<div flex layout="row" layout-align="start stretch" class="padding-sm">' + 
-                        '<en-panel flex layout="row" class="padding margin-bottom-collapse panel-overview-highlights panel-overview-success">' + 
-                            '<en-icon icon="briefcase" class="xl"></en-icon>' + 
-                            '<div flex class="text-right">' +
-                                '<div class="uppercase">' + msg.client.clientId + '</div>' + 
-                                '<small>' + msg.client.domain + '</small>' + 
-                            '</div>' + 
-                        '</en-panel>' +
-                    '</div>' + 
-                    '<div flex layout="row" layout-align="start stretch" class="padding-sm">' + 
-                        '<en-panel flex layout="row" class="padding margin-bottom-collapse panel-overview-highlights panel-overview-warn">' + 
-                            '<en-icon icon="box-storage" class="xl"></en-icon>' + 
-                            '<div flex class="text-right">' +
-                                '<div>' + msg.client.site.alias + '</div>' + 
-                                '<small>' + msg.client.site.name + '</small>' + 
-                            '</div>' + 
-                        '</en-panel>' +
-                    '</div>' + 
-                    '<div flex layout="row" layout-align="start stretch" class="padding-sm">' + 
-                        '<en-panel flex layout="row" class="padding margin-bottom-collapse panel-overview-highlights panel-overview-info">' + 
-                            '<en-icon icon="employee" class="xl"></en-icon>' + 
-                            '<div flex class="text-right">' +
-                                '<div>' + msg.user.alias + '</div>' + 
-                                '<small>' + msg.user.username + '</small>' + 
-                            '</div>' + 
-                        '</en-panel>' +
-                    '</div>' + 
-                '</div>';
-            }
 
             // have to pass something saying which app it is
             // may not be necessary as apps should be isolated
@@ -101,7 +66,6 @@ function componentController($scope, childAppService) {
     };
 
     window.onload = function() {
-        messageContainer = document.getElementById('message');
         window.addEventListener('message', receiveMessage, false);
     };
 
