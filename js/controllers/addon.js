@@ -101,6 +101,17 @@ function componentController($scope, childAppService) {
         window.addEventListener('message', receiveMessage, false);
     };
 
+    // send postMessage
+    // @param {object} message object data to send with postMessage
+    function postMsg(message) {
+        var parentOrigin = window.location.ancestorOrigins[0];
+        var parentWindow = window.parent;
+
+        parentWindow.postMessage(message, parentOrigin);
+    }
+
+    // receive postMessage
+    // @param {object} ev event object from postMessage
     function receiveMessage(ev) {
         // console.log('receive message to iFrame');
 
@@ -110,15 +121,8 @@ function componentController($scope, childAppService) {
         }
 
         var message = ev.data;
-        if(!message.callback) return;
+        if(!message.action) return;
 
-        callbacks[message.callback](message);
-    }
-
-    function postMsg(message) {
-        var parentOrigin = window.location.ancestorOrigins[0];
-        var parentWindow = window.parent;
-
-        parentWindow.postMessage(message, parentOrigin);
+        callbacks[message.action](message);
     }
 }
