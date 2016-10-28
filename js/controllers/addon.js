@@ -28,7 +28,7 @@ function componentController($scope, childAppService) {
             self.parentAppInfo = msg;
             console.log('self.parentAppInfo', self.parentAppInfo);
 
-            $scope.apply();
+            $scope.$apply();
             // dev only
             if(messageContainer) {
                 messageContainer.innerHTML = '<div layout="row">' +
