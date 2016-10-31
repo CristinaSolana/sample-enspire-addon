@@ -1,0 +1,72 @@
+<div class="padding" layout="column" layout-fill>
+    <en-panel class="panel-secondary">
+        <en-header>
+            <en-title>Enspire Commerce Details...</en-title>
+            <span><a ui-sref="quickbooks">Quickbooks</a></span>
+        </en-header>
+        <en-body>
+            <ng-include src="'../partials/parent-app-info.html'" layout="row"></ng-include>
+        </en-body>
+    </en-panel>
+
+    <en-panel id="list-panel" class="panel-secondary margin-bottom-collapse" flex layout="column">
+        <en-header>
+            <en-title>Customer Lookup</en-title>
+        </en-header>
+        <en-body flex>
+            <div layout class="padding collection-search-bar">
+                <div flex="55"><!--ng-controller="AdvancedSearchCtrl"-->
+                    <div>
+                        <en-api-search object="ctrl.customerMockData"
+                                       type="advanced"
+                                       criteria="customersSearchCriteria"
+                                       default-filter="fullName"></en-api-search>
+                    </div>
+                    <en-api-search-controls object="ctrl.customerMockData" class="margin-top-sm" ng-show="ctrl.customerMockData.search.criteria.length>0"></en-api-search-controls>
+                </div>
+                <en-flex></en-flex>
+                <div layout>
+                    <en-collection-count object="ctrl.customerMockData"></en-collection-count>
+                    <en-collection-paging object="ctrl.customerMockData" layout="basic"></en-collection-paging>
+                </div>
+                <en-button-group class="action-bar" ng-if="isDevEnv">
+                    <en-button class="trim" en-tap="bulkAction = !bulkAction; ctrl.customerMockDataCollection.rebuild()" ng-class="{'text-primary': bulkAction}"><en-icon icon="check-block"></en-icon></en-button>
+                    <en-actions type="button" icon="export" class="trim">
+                        <en-action icon="export" en-tap="">Export Data</en-action>
+                        <en-action icon="disk-floppy" en-tap="">Save Search</en-action>
+                    </en-actions>
+                    <en-actions type="button" icon="more-vertical" class="trim" ng-disabled="!bulkAction">
+                        <en-action icon="trash" en-tap="">Delete Selected</en-action>
+                    </en-actions>
+                </en-button-group>
+            </div>
+
+
+            <en-collection flex class="collection-constrain collection-divided collection-alternated" object="ctrl.customerMockData">
+                <en-collection-column width="38" align="center" checkbox="true" column-hide="!bulkAction"></en-collection-column>
+                <en-collection-column width="38" align="center" stop-propagation="true" column-hide="bulkAction">
+                    <en-actions type="icon" icon="more-vertical" ng-disabled="customers.selected.length > 0">
+                        <en-action icon="edit" en-tap="showScreen('customers/lookup/' + item.refKey + '/')">Edit Customer</en-action>
+                        <en-action icon="trash" en-tap="showModal('shared/delete', {apiPath: 'customers', title: 'customer', identifierText: item.name.first + ' ' + item.name.last, item: item}, ctrl.customerMockData.get)">Remove Customer</en-action>
+                    </en-actions>
+                </en-collection-column>
+                <en-collection-column name="" width="52" align="center">
+                    <en-image class="thumbnail-xs thumbnail-round">
+                        <img en-src="{{::item.upload.secureUrl}}">
+                    </en-image>
+                </en-collection-column>
+                <en-collection-column name="Name" sort-with="name.first" flex="30">
+                    {{::item.name.first}} {{::item.name.last}}
+                </en-collection-column>
+                <en-collection-column name="Address" sort-with="" flex="40">
+                    <div>
+                        <div>{{::item.address.line1}}<span ng-if="item.address.line2">, {{::item.address.line2}}</span><span ng-if="item.address.line3">, {{::item.address.line3}}</span></div>
+
+                        <small>{{::item.address.city}}<span ng-if="item.address.state">, {{::item.address.state}}</span> {{::item.address.zip}} {{::item.address.country}}</small>
+                    </div>
+                </en-collection-column>
+                <en-collection-column name="Email" field="email" flex="35"></en-collection-column>
+            </en-collection>
+        </en-body>
+    </en-panel>
+</div>

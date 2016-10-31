@@ -17,72 +17,11 @@ function componentService() {
         "total":7,
         "data":[{"id":"69927480-207f-11e6-b7dd-7b8b72928335","refName":"69929b90-207f-11e6-b7dd-7b8b72928335","refKey":"6e903364fda18e323ed2b8a2cad30a80","dataDomains":[],"sequential":66,"name":{"last":"Barnes","first":"Jim","middle":"L","suffix":"II","salutation":"Mr."},"companyName":"enVista","fullName":"Jim Barnes","email":"jbarnes@envistacorp.com","createdDate":1463961600000,"contacts":[{"type":"mobile","value":"7147476144"},{"type":"phone","value":"3172089100"}],"settings":{},"attributes":{},"tags":[],"updated":1471031859000,"archived":false,"address":{"line1":"400 NW 26th Path","line2":"","line3":"","city":"Miami","state":"FL","zip":"33127","country":"US"},"upload":{"refKey":"c0c6b81a1db934a1580e37adf70670a3","fileName":"Jim-Barnes.png","originalFileName":"Jim-Barnes","width":200,"height":200,"resourceType":"media","format":"png","url":"http://res.cloudinary.com/ghurka/image/upload/v1466520245/c0c6b81a1db934a1580e37adf70670a3.png","secureUrl":"https://res.cloudinary.com/ghurka/image/upload/v1466520245/c0c6b81a1db934a1580e37adf70670a3.png","bytes":47860,"metadata":{"title":"","public":false,"altText":"","caption":"","description":""},"defaultMedia":true,"tags":[]}},{"id":"4ff1f700-2406-11e6-a60b-b7e2879c5160","refName":"4ff21e10-2406-11e6-a60b-b7e2879c5160","refKey":"80d92c0065133dc6e43a73397aac3c32","dataDomains":[],"sequential":84,"name":{"last":"Brown","first":"Kevin","middle":"","suffix":"","salutation":""},"companyName":"","fullName":"Kevin Brown","email":"","createdDate":1464307200000,"contacts":[{"type":"mobile","value":"3215554637"}],"settings":{},"attributes":{},"tags":[],"updated":1472138044000,"archived":false,"address":{"line1":"504 Battery Drive","line2":"","line3":"","city":"NYC","state":"NY","zip":"11123","country":"US"},"upload":{"refKey":"a95415780a5f13380ffc0cb08469d40f","fileName":"ui-face-8.png","originalFileName":"ui-face-8","width":256,"height":256,"resourceType":"media","format":"png","url":"http://res.cloudinary.com/ghurka/image/upload/v1467314278/a95415780a5f13380ffc0cb08469d40f.png","secureUrl":"https://res.cloudinary.com/ghurka/image/upload/v1467314278/a95415780a5f13380ffc0cb08469d40f.png","bytes":83559,"metadata":{"title":"","public":false,"altText":"","caption":"","description":""},"defaultMedia":true,"tags":[]}},{"id":"bcbdbb60-2e49-11e6-8d83-83eafb1d09b9","refName":"bcbdbb61-2e49-11e6-8d83-83eafb1d09b9","refKey":"1eab08d93b67ff610eba196073a93752","dataDomains":[],"sequential":85,"name":{"last":"Sweet","first":"Brandino","middle":"","suffix":"","salutation":"Mr."},"companyName":"Enspire Commerce","fullName":"Brandon Sweet","email":"bsweet@enspirecommerce.com","createdDate":1465430400000,"contacts":[{"type":"mobile","value":"3125554637"},{"type":"mobile","value":"3125554321"},{"type":"mobile","value":"3125554322"}],"settings":{},"attributes":{},"tags":[],"updated":1472660235000,"archived":false,"address":{"line1":"555 FakeRoad Dr","line2":"","line3":"","city":"Dallas","state":"TX","zip":"98735","country":"US"},"upload":{"refKey":"ad4ad63b1fcce9834880c446365e10d9","fileName":"ui-face-1.jpg","originalFileName":"ui-face-1","width":128,"height":128,"resourceType":"media","format":"jpg","url":"http://res.cloudinary.com/ghurka/image/upload/v1467314313/ad4ad63b1fcce9834880c446365e10d9.jpg","secureUrl":"https://res.cloudinary.com/ghurka/image/upload/v1467314313/ad4ad63b1fcce9834880c446365e10d9.jpg","bytes":5530,"metadata":{"title":"","public":false,"altText":"","caption":"","description":""},"defaultMedia":true,"tags":[]}},{"id":"3a2912b0-211c-11e6-b700-61330b8fb44b","refName":"3a2912b1-211c-11e6-b700-61330b8fb44b","refKey":"ffbd4998c8fb8bb39ef376a2f9e5ce9c","dataDomains":[],"sequential":67,"name":{"last":"Futch","first":"Jason","middle":"","suffix":"","salutation":""},"companyName":"Acme, Inc.","fullName":"JasonFutch","email":"jane@acme.com","createdDate":1463961600000,"contacts":[{"type":"mobile","value":"3125554321"}],"settings":{},"attributes":{},"tags":[],"updated":1472138025000,"archived":false,"address":{"line1":"321 Main St","line2":"","line3":"","city":"Atlanta","state":"GA","zip":"30303","country":"US"},"upload":{"refKey":"f797aa49b0e6128b6c03b94c50a6b4b2","fileName":"ui-face-2.jpg","originalFileName":"ui-face-2","width":128,"height":128,"resourceType":"media","format":"jpg","url":"http://res.cloudinary.com/ghurka/image/upload/v1467314226/f797aa49b0e6128b6c03b94c50a6b4b2.jpg","secureUrl":"https://res.cloudinary.com/ghurka/image/upload/v1467314226/f797aa49b0e6128b6c03b94c50a6b4b2.jpg","bytes":5214,"metadata":{"title":"","public":false,"altText":"","caption":"","description":""},"defaultMedia":true,"tags":[]}},{"id":"b02e8620-633e-11e6-89e5-e357e4911921","refName":"b02e8621-633e-11e6-89e5-e357e4911921","refKey":"6036261939193fe0383d8d96b62277e7","dataDomains":[],"sequential":121,"name":{"last":"Romanova","first":"Natasha","middle":"","suffix":"","salutation":""},"companyName":"Marvel","fullName":"Natasha Romanova","email":"natasha@marvel.com","createdDate":1471219200000,"contacts":[],"settings":{},"attributes":{},"tags":[],"updated":1472137527000,"archived":false,"address":{"line1":"300 NW 26th Street","line2":"#4","line3":"","city":"Miami","state":"FL","zip":"33127","country":"US"},"upload":{"refKey":"c2e1c349d593e62928e0259e8e67d7e5","fileName":"ui-face-female-7.png","originalFileName":"ui-face-female-7","width":256,"height":256,"resourceType":"media","format":"png","url":"http://res.cloudinary.com/ghurka/image/upload/v1472137295/c2e1c349d593e62928e0259e8e67d7e5.png","secureUrl":"https://res.cloudinary.com/ghurka/image/upload/v1472137295/c2e1c349d593e62928e0259e8e67d7e5.png","bytes":59739,"metadata":{"title":"","public":false,"altText":"","caption":"","description":""},"defaultMedia":true,"tags":[]}},{"id":"fe69d650-633e-11e6-89e5-e357e4911921","refName":"fe69d651-633e-11e6-89e5-e357e4911921","refKey":"d867dcb89f964d0975987b0177a68a28","dataDomains":[],"sequential":122,"name":{"last":"Solana","first":"Cristina","middle":"","suffix":"","salutation":""},"companyName":"Enspire Commerce","fullName":"Cristina Solana","email":"cs@enspire.com","createdDate":1471219200000,"contacts":[{"type":"mobile","value":"3215554637"}],"settings":{},"attributes":{},"tags":[],"updated":1472137630000,"archived":false,"address":{"line1":"123 Main Street","line2":"","line3":"","city":"Miami","state":"FL","zip":"33185","country":"US"},"upload":{"refKey":"67b304a70518ac6a75aad13e287c5fb3","fileName":"ui-face-female-14.jpg","originalFileName":"ui-face-female-14","width":128,"height":128,"resourceType":"media","format":"jpg","url":"http://res.cloudinary.com/ghurka/image/upload/v1472137543/67b304a70518ac6a75aad13e287c5fb3.jpg","secureUrl":"https://res.cloudinary.com/ghurka/image/upload/v1472137543/67b304a70518ac6a75aad13e287c5fb3.jpg","bytes":7066,"metadata":{"title":"","public":false,"altText":"","caption":"","description":""},"defaultMedia":true,"tags":[]}},{"id":"aa3de0b0-699e-11e6-a7a5-3d77acfa9cf0","refName":"aa3de0b1-699e-11e6-a7a5-3d77acfa9cf0","refKey":"7182fe6af3735914ff35ec2f741ee9cc","dataDomains":[],"sequential":123,"name":{"last":"Stark","first":"Tony","middle":"","suffix":"","salutation":""},"companyName":"Marvel","fullName":"Tony Stark","email":"tony@marvel.com","createdDate":1471996800000,"contacts":[{"type":"mobile","value":"3125554321"}],"settings":{},"attributes":{},"tags":[],"updated":1472137762000,"archived":false,"address":{"line1":"123 Main Street","line2":"","line3":"","city":"Miami","state":"FL","zip":"33123","country":"US"},"upload":{"refKey":"31b93f7657253a88cb5ae45e4ab2f738","fileName":"ui-face-male-9.png","originalFileName":"ui-face-male-9","width":256,"height":256,"resourceType":"media","format":"png","url":"http://res.cloudinary.com/ghurka/image/upload/v1472137702/31b93f7657253a88cb5ae45e4ab2f738.png","secureUrl":"https://res.cloudinary.com/ghurka/image/upload/v1472137702/31b93f7657253a88cb5ae45e4ab2f738.png","bytes":53529,"metadata":{"title":"","public":false,"altText":"","caption":"","description":""},"defaultMedia":true,"tags":[]}}]
     };
-
-    var apps = {
-        "987654321": {
-            "id": '987654321',
-            "title": 'My App',
-            "description": 'My app description here...',
-            "menu": [
-                {
-                    "icon": 'receipt-curled',
-                    "title": 'Orders',
-                    "state": 'ordersList'
-                }
-            ],
-            "bar": {
-                "title": 'Cristina\'s App',
-                "buttons": [
-                    {
-                        "text": "New",
-                        "icon": "plus-circle",
-                        "event": "newApp"
-                    }
-                ]
-            }, 
-            "imports": []
-        },
-        "123456789": {
-            "id": '123456789',
-            "title": 'Magento',
-            "description": 'Magento Description here...',
-            "menu": [
-                {
-                    "icon": 'customer',
-                    "title": 'Customers',
-                    "state": 'customerList'
-                }
-            ],
-            "bar": {
-                "title": 'Jason\'s App',
-                "buttons": [
-                    {
-                        "text": "Enable",
-                        "icon": "check-circle",
-                        "event": "enableMagento"
-                    }
-                ]
-            }, 
-            "imports": []
-        },
-        "012345678": {
-            "id": '012345678',
-            "title": 'Quickbooks',
-            "description": 'Quickbooks Description here...',
-            "menu": [],
-            "bar": {
-                "title": '',
-                "buttons": []
-            }, 
-            "imports": []
-        }
-    };
     
     var self = {
         getSalesMockData: getSalesMockData,
-        getCustomerMockData: getCustomerMockData,
-        getApps: getApps
-    }
+        getCustomerMockData: getCustomerMockData
+    };
 
     return self;
 
@@ -92,9 +31,5 @@ function componentService() {
 
     function getCustomerMockData() {
         return customerMockData;
-    }
-
-    function getApps() {
-        return apps;
     }
 }

@@ -1,73 +1,73 @@
-childApp.controller('childAppCtrl', componentController);
+childApp.controller('myAppCtrl', componentController);
 
-function componentController($scope, childAppService) {
+function componentController($scope, $rootScope, $state, childAppService, myAppService) {
     var self = this;
 
     self.salesMockData = childAppService.getSalesMockData();
 
     self.customerMockData = childAppService.getCustomerMockData();
 
-    // may not be necessary as apps should be isolated
-    var apps = childAppService.getApps();
-
     var callbacks = {
-        init: function(msg) {
+        onRequestAuth: function(msg) {
+            console.info('onRequestAuth init, send back whatever is needed TBD');
+            // send some auth stuff we need
+            postMsg({action: 'onAuth'});
+        },
+
+        onPlatformData: function(msg) {
             var uiStyle = document.createElement('link');
             uiStyle.type = 'text/css';
             uiStyle.rel = 'stylesheet';
             uiStyle.href = msg.cssUrl;
             document.getElementsByTagName('head')[0].appendChild(uiStyle);
 
-            uiStyle.onload = function () {
-                postMsg({action: 'cssLoaded'});
-            };  
-        },
-
-        setData: function(msg) {
-            self.parentAppInfo = msg;
+            // Why am I putting this on $rootScope, you might ask: because I am a bad person. And a lazy person.
+            // And I want the data to persist while I press back button in parent app. Be better than me. Use a service or post to an API.
+            $rootScope.platformData = msg;
             $scope.$apply();
 
             // have to pass something saying which app it is
             // may not be necessary as apps should be isolated
             var data = {};    
-            data.action = 'receiveAppInfo';
-            data.app = apps[msg.appName];
+            data.action = 'onAppInfo';
+            data.app = myAppService.getApp();
 
             postMsg(data);
+
+            uiStyle.onload = function () {
+                postMsg({action: 'onCssLoaded'});
+            };
         },
 
-        setState: function(msg) {
-            console.log('I\'ve got a new app state', msg.state);
+        onStateChange: function(msg) {
+            console.info('app state changed', msg.state);
             // change your app state or location
 
             var panelEl = document.getElementById('list-panel');
 
             switch(msg.state) {
                 case 'ordersList':
-                    panelEl.className += ' show-list';
-                    break;
-                case 'customerList': 
-                    panelEl.className += ' show-list';
+                    $state.go('orderList');
                     break;
                 default: 
                     break;
             }
 
             var data = {};
-            data.action = 'appStateChanged';
+            data.action = 'onAppStateChanged';
 
             postMsg(data);
         },
 
-        setEvent: function(msg) {
+        onButtonEvent: function(msg) {
             console.log('Button event', msg);
             // do stuff for button events
         }
     };
 
-    window.onload = function() {
+    $scope.$on('$viewContentLoaded', function() {
         window.addEventListener('message', receiveMessage, false);
-    };
+    });
 
     // send postMessage
     // @param {object} message object data to send with postMessage
@@ -82,7 +82,7 @@ function componentController($scope, childAppService) {
     // @param {object} ev event object from postMessage
     function receiveMessage(ev) {
         if(ev.origin.indexOf('retailpoint.com') === -1 && ev.origin.indexOf('enspireplatform.com') === -1) {
-            console.log('origin', ev.origin, 'not allowed.');
+            console.log('You\'re trying to be slick. Origin', ev.origin, 'not allowed.');
             return;
         }
 
