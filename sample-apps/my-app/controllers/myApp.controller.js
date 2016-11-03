@@ -1,6 +1,6 @@
 childApp.controller('myAppCtrl', componentController);
 
-function componentController($scope, $rootScope, $state, childAppService, myAppService) {
+function componentController($scope, $rootScope, $state, $sce, childAppService, myAppService, $http) {
     var self = this;
 
     self.salesMockData = childAppService.getSalesMockData();
@@ -41,15 +41,15 @@ function componentController($scope, $rootScope, $state, childAppService, myAppS
 
         onStateChange: function(msg) {
             console.info('app state changed', msg.state);
-            // change your app state or location
-
-            var panelEl = document.getElementById('list-panel');
 
             switch(msg.state) {
                 case 'ordersList':
                     $state.go('orderList');
                     break;
-                default: 
+                case 'myapp':
+                    $state.go('myapp');
+                    break;
+                default:
                     break;
             }
 

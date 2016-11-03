@@ -5,3 +5,20 @@
 .show-list {
     visibility: visible !important;
 }
+
+[ui-view].ng-enter,
+.fade-stagger.ng-enter,
+.fade.ng-enter {
+    transition: 0.2s linear all;
+    opacity: 0;
+}
+
+[ui-view].ng-enter.ng-enter-active,
+.fade-stagger.ng-enter.ng-enter-active,
+.fade.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+.fade-stagger.ng-enter-stagger {
+    transition-delay: 0.3s;
+    transition-duration: 0s;
+}

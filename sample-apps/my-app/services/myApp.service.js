@@ -8,6 +8,11 @@ function componentService() {
         "description": 'My app description here...',
         "menu": [
             {
+                "icon": 'home',
+                "title": 'Home',
+                "state": 'myapp'
+            },
+            {
                 "icon": 'receipt-curled',
                 "title": 'Orders',
                 "state": 'ordersList'
