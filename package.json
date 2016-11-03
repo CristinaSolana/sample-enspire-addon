@@ -26,5 +26,10 @@
     "angular-animate": "^1.4.3",
     "angular-messages": "^1.4.3",
     "angular-sanitize": "^1.4.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0"
   }
 }
