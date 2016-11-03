@@ -74,6 +74,7 @@ function componentController($scope, $rootScope, $state, childAppService, myAppS
     // send postMessage
     // @param {object} message object data to send with postMessage
     function postMsg(message) {
+        console.log('Add-on postMsg', message);
         var parentOrigin = window.location.ancestorOrigins[0];
         var parentWindow = window.parent;
 
@@ -83,6 +84,7 @@ function componentController($scope, $rootScope, $state, childAppService, myAppS
     // receive postMessage
     // @param {object} ev event object from postMessage
     function receiveMessage(ev) {
+        console.log('Add-on receiveMessage', ev);
         if(ev.origin.indexOf('retailpoint.com') === -1 && ev.origin.indexOf('enspireplatform.com') === -1) {
             console.log('You\'re trying to be slick. Origin', ev.origin, 'not allowed.');
             return;
