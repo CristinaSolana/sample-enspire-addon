@@ -67,6 +67,7 @@ function componentController($scope, $rootScope, $state, childAppService, myAppS
         }
     };
 
+    window.addEventListener('message', receiveMessage, false);
     $scope.$on('$viewContentLoaded', function() {
         window.addEventListener('message', receiveMessage, false);
     });
