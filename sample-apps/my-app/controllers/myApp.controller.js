@@ -67,13 +67,9 @@ function componentController($scope, $rootScope, $state, childAppService, myAppS
         }
     };
 
-    //$scope.$on('$viewContentLoaded', function() {
-    //    window.addEventListener('message', receiveMessage, false);
-    //});
-
-    window.onload = function() {
+    $scope.$on('$viewContentLoaded', function() {
         window.addEventListener('message', receiveMessage, false);
-    };
+    });
 
     // send postMessage
     // @param {object} message object data to send with postMessage
