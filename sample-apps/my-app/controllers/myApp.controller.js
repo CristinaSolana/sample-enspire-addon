@@ -1,6 +1,8 @@
 childApp.controller('myAppCtrl', componentController);
 
-function componentController($scope, $rootScope, $state, $sce, childAppService, myAppService, $http) {
+function componentController($scope, $rootScope, $state, childAppService, myAppService) {
+    console.log('myAppCtrl init');
+
     var self = this;
 
     self.salesMockData = childAppService.getSalesMockData();
