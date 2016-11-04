@@ -1,11 +1,11 @@
 childApp.controller('myAppCtrl', componentController);
 
-function componentController($scope, $rootScope, $state, childAppService, myAppService) {
+function componentController($scope, $rootScope, $window, $state, childAppService, myAppService) {
     console.log('myAppCtrl init');
 
     $scope.$on('$viewContentLoaded', function() {
         console.log('$viewContentLoaded');
-        window.addEventListener('message', receiveMessage, false);
+        $window.addEventListener('message', receiveMessage, false);
     });
 
     var self = this;
