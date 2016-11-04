@@ -1,4 +1,4 @@
-childApp.factory('childAppService', componentService);
+childApp.factory('mockDataService', componentService);
 
 function componentService() {
     // Mock Data 
