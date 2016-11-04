@@ -3,6 +3,11 @@ childApp.controller('myAppCtrl', componentController);
 function componentController($scope, $rootScope, $state, childAppService, myAppService) {
     console.log('myAppCtrl init');
 
+    $scope.$on('$viewContentLoaded', function() {
+        console.log('$viewContentLoaded');
+        window.addEventListener('message', receiveMessage, false);
+    });
+
     var self = this;
 
     self.salesMockData = childAppService.getSalesMockData();
@@ -66,10 +71,6 @@ function componentController($scope, $rootScope, $state, childAppService, myAppS
             // do stuff for button events
         }
     };
-
-    $scope.$on('$viewContentLoaded', function() {
-        window.addEventListener('message', receiveMessage, false);
-    });
 
     // send postMessage
     // @param {object} message object data to send with postMessage
