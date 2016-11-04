@@ -1,4 +1,4 @@
-var childApp = angular.module('childApp', ['enspire.ui', 'ui.router'])
+var childApp = angular.module('childApp', ['enspire.ui', 'ui.router', 'enspire.postmessage'])
     .config(['$stateProvider', '$urlRouterProvider', config]);
 
 function config($stateProvider, $urlRouterProvider) {

@@ -1,4 +1,6 @@
-childApp.factory('postMessageService', componentService);
+var enPostMessage = angular.module('enspire.postmessage', []);
+
+enPostMessage.factory('postMessageService', componentService);
 
 function componentService($rootScope) {
     var evSource, evOrigin, cssUrl;
