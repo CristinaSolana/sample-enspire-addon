@@ -1,6 +1,8 @@
 childApp.factory('magentoService', componentService);
 
 function componentService() {
+    console.log('3pd magentoService');
+
     // Mock Data
     var app = {
         "id": '123456789',

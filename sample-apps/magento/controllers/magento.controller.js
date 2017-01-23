@@ -1,8 +1,11 @@
 childApp.controller('magentoCtrl', componentController);
 
 function componentController($scope, $rootScope, $window, postMessageService, mockDataService, magentoService) {
+    console.debug('3pd magentoCtrl');
+
     $scope.$on('$viewContentLoaded', function() {
         $window.addEventListener('message', postMessageService.receiveMessage, false);
+        postMessageService.onReady();
     });
 
     var self = this;
@@ -14,7 +17,6 @@ function componentController($scope, $rootScope, $window, postMessageService, mo
         // Why am I putting this on $rootScope, you might ask: because I am a bad person. And a lazy person.
         // And I want the data to persist while I press back button in parent app. Be better than me. Use a service or post to an API.
         $rootScope.platformData = data;
-
         var app = magentoService.getApp();
         postMessageService.sendData(app);
     });

@@ -3,6 +3,7 @@ childApp.controller('myAppCtrl', componentController);
 function componentController($scope, $rootScope, $window, $state, postMessageService, mockDataService, myAppService) {
     $scope.$on('$viewContentLoaded', function() {
         $window.addEventListener('message', postMessageService.receiveMessage, false);
+        postMessageService.onReady();
     });
 
     var self = this;

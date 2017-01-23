@@ -3,12 +3,8 @@ var enPostMessage = angular.module('enspire.postmessage', []);
 enPostMessage.factory('postMessageService', componentService);
 
 function componentService($rootScope) {
+    console.debug('3pd postMessageService');
     var evSource, evOrigin, cssUrl;
-
-    var self = {
-        receiveMessage: receiveMessage,
-        sendData: sendData
-    };
 
     var actions = {
         onRequestAuth: function(msg) {
@@ -41,7 +37,19 @@ function componentService($rootScope) {
         }
     };
 
+    var self = {
+        receiveMessage: receiveMessage,
+        sendData: sendData,
+        onReady: onReady
+    };
+
     return self;
+
+    function onReady() {
+        console.info('onReady init');
+        // send requested auth data, secret key or whatever we decide
+        parent.postMessage({action: 'onReady'}, '*'); // TODO: need to store origin to avoid *
+    }
 
     function sendData(appData) {
         var uiStyle = document.createElement('link');
@@ -74,13 +82,13 @@ function componentService($rootScope) {
         var message = ev.data;
         if(!message.action) return;
 
-        seteventSource(ev.source);
+        setEventSource(ev.source);
         setEventOrigin(ev.origin);
 
         actions[message.action](message)
     }
 
-    function seteventSource(src) {
+    function setEventSource(src) {
         evSource = src;
     }
 
